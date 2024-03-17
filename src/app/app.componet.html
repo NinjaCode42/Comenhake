@@ -1,33 +1,157 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * No framework in use * * * * * * -->
+<!-- * * * * * Angular framework for use * * * * * -->
+
+<!-- * * * * * Este projeto foi iniciado no dia [3/17/2024] * * * * * * * -->
+<!-- * * * * * E todos os membro que trabalhou nele, tera seu ganho lucrativo 💵* * * * * * * -->
+<!-- * * * * * Entao nao se preocupe, sera recompencado generosamente 👌 * * * * * * * -->
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!-- * * TODO: Criar as duas paginas para logoin e a pagina principal, mais detalhes sobre a frontend consultar Anisio Nkula-->
-
-
+<link href="/src/app/app.style.css">
 <style>
-    :root{
-        color: #000;
+  
+    html{
+      color-scheme: dark;
     }
+  
     body{
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        margin: 0;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.6;
     }
+
+    img{
+        max-width: 100%;
+        display: block;
+    }
+
+    .abcd{
+        max-width: 50rem;
+        margin-inline: auto;
+        padding-inline: 1rem;
+    }
+
 </style>
-
-<!--  The Main Structure-->
-<main>
-    <div class="asbwiq">
-        
-    </div>djs
-    <div class="aihwq">
-
+  <script>
+  
+  </script>
+  
+  <!-- * * * * * * 👇👇 Modelo web comeca daqui para baixo 👇👇 * * * * * *-->
+  
+  <main>
+  
+    <!-- * * * * * * Area de LogIn/SingUp da web * * * * * *-->
+  
+    <div class="abcd">
+      <div class="accordion">
+        <div class="accordion-panel">
+          <h2 id="panel1-heading">
+            <button
+              class="accordian-trigger"
+              aria-controls="panel1-content"
+              aria-expanded="true"
+              >
+              <span id="panel1-title">Boating</span>
+              <svg aria-hidden="true" class="accordian-icon">
+                <use xlink:href="#cog"></use>
+              </svg>
+            </button>
+          </h2>
+          
+          <div
+           class="accordion-content"
+           id="panel1-content"
+           aria-labelledby="panel1-heading"
+           aria-hidden="true"
+           role="region"
+           >
+              <div class="conten-panel"></div>
+              <img class="accordian-image" src="../assets/LotteryTicket.png" alt="Tickets">
+          </div>
+  
+        </div>
+  
+        <div class="accordion-panel">
+          <h2 id="panel2-heading">
+            <button
+              class="accordian-trigger"
+              aria-controls="panel2-content"
+              aria-expanded="false"
+              >
+              <span id="panel2-title">Boating</span>
+              <svg aria-hidden="true" class="accordian-icon">
+                <use xlink:href="#chat"></use>
+              </svg>
+            </button>
+          </h2>
+          
+          <div
+           class="accordion-content"
+           id="panel2-content"
+           aria-labelledby="panel2-heading"
+           aria-hidden="true"
+           role="region"
+           >
+              <div class="conten-panel"></div>
+              <img class="accordian-image" src="../assets/Rolet.png" alt="Tickets">
+          </div>
+  
+        </div>
+  
+      </div>
     </div>
-</main>
-<script>
-
-</script>
+  
+  </main>
+  
+  <!-- * * * * * * SVGs para uso * * * * * *-->
+  
+  <svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="games">
+      <path d="M12 22c3.719 0 7.063-2.035 8.809-5.314L13 12l7.809-4.686C19.063 4.035 15.719 2 12 2 6.486 2 2 6.486 2 12s4.486 10 10 10zm-.5-16a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 11.5 6z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="loader">
+      <path d="M12 22c5.421 0 10-4.579 10-10h-2c0 4.337-3.663 8-8 8s-8-3.663-8-8c0-4.336 3.663-8 8-8V2C6.579 2 2 6.58 2 12c0 5.421 4.579 10 10 10z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="log-out">
+      <path d="M16 13v-2H7V8l-5 4 5 4v-3z"></path>
+      <path d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="log-in">
+      <path d="m13 16 5-4-5-4v3H4v2h9z"></path>
+      <path d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="chat">
+      <path d="M4 18h2v4.081L11.101 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2z"></path>
+      <path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="cog">
+      <path d="m2.344 15.271 2 3.46a1 1 0 0 0 1.366.365l1.396-.806c.58.457 1.221.832 1.895 1.112V21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1.598a8.094 8.094 0 0 0 1.895-1.112l1.396.806c.477.275 1.091.11 1.366-.365l2-3.46a1.004 1.004 0 0 0-.365-1.366l-1.372-.793a7.683 7.683 0 0 0-.002-2.224l1.372-.793c.476-.275.641-.89.365-1.366l-2-3.46a1 1 0 0 0-1.366-.365l-1.396.806A8.034 8.034 0 0 0 15 4.598V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1.598A8.094 8.094 0 0 0 7.105 5.71L5.71 4.904a.999.999 0 0 0-1.366.365l-2 3.46a1.004 1.004 0 0 0 .365 1.366l1.372.793a7.683 7.683 0 0 0 0 2.224l-1.372.793c-.476.275-.641.89-.365 1.366zM12 8c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z"></path>
+    </symbol>
+  </svg>
+  
+  
+  <svg class="icon">
+    <use xlink:href="#games"></use>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#loader"></use>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#log-out"></use>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#log-in"></use>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#chat"></use>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#cog"></use>
+  </svg>
